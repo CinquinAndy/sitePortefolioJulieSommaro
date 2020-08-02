@@ -1,0 +1,511 @@
+* {
+    font-family: din-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #B24C59
+}
+
+a, article, aside, div, footer, h1, hr, section, svg {
+    color: #fff
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1em 2.5em 1em;
+    width: 100%
+}
+section article{
+    width: 90%;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    padding: 1em;
+}
+
+footer {
+    width: 100%;
+    padding: 1em;
+    background: rgba(127, 54, 62, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    z-index: 3;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(127, 54, 62, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li img {
+    height: 32px;
+}
+
+ul li:nth-child(1) {
+    padding-left: 1em;
+}
+
+
+section:nth-child(2n+1) {
+    background: #B24C59
+}
+
+section:nth-child(2n) {
+    background: #E0DACE
+}
+
+section:nth-child(2n) * {
+    color: #505050;
+}
+
+section:nth-child(2n) h4 {
+    color: #BC6E74;
+}
+
+#sectionBackground{
+    max-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#sectionBackground div{
+    height: 100%;
+    width: 100%;
+}
+#sectionBackground div img{
+    width: 100%;
+}
+
+#competences h4 {
+    color: #505050;
+}
+
+.skillbar {
+    padding: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteBack {
+    width: 200px;
+    height: 20px;
+    background: white;
+    border-radius: 0.3em;
+}
+
+.whiteBack div {
+    height: 20px;
+    background: #B24C59;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+#jaugeInspirations {
+    width: 170px;
+}
+
+#jaugeTendances {
+    width: 155px;
+}
+
+#jaugeMateriauxTissus {
+    width: 170px;
+}
+
+#jaugeManipulations {
+    width: 155px;
+}
+
+#jaugeManipulations {
+    width: 155px;
+}
+
+#jaugeDetails {
+    width: 155px;
+}
+
+#jaugeCouture {
+    width: 180px;
+}
+
+#jaugePatronagePlat {
+    width: 155px;
+}
+
+#jaugePatronageDigital {
+    width: 105px;
+}
+
+#jaugeTricotMain {
+    width: 150px;
+}
+
+#jaugeTricotMachine {
+    width: 105px;
+}
+
+#jaugeCrochet {
+    width: 120px;
+}
+
+#jaugeShibori {
+    width: 180px;
+}
+
+#jaugeBatik {
+    width: 110px;
+}
+
+#jaugeFlocage {
+    width: 160px;
+}
+
+#jaugeSerigraphie {
+    width: 160px;
+}
+
+#jaugeDigitalPhotoshop {
+    width: 160px;
+}
+
+#jaugeTissageManuel {
+    width: 110px;
+}
+
+#jaugeAnglais {
+    width: 200px;
+    border-radius: 0.3em;
+}
+
+#jaugeItalien {
+    width: 200px;
+    border-radius: 0.3em;
+}
+
+#jaugeAllemand {
+    width: 120px;
+}
+
+#jaugeLangueDesSignesLSF {
+    width: 85px;
+}
+
+@keyframes slidein {
+    0% {
+        margin-top: 100vh
+    }
+    100% {
+        margin-top: 0
+    }
+}
+
+@keyframes slideout {
+    0% {
+        margin-top: 0
+    }
+    100% {
+        margin-top: -100vh
+    }
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 17.5s slidy infinite
+}
+
+#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left
+}
+
+#slider {
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+#projets > a{
+    padding: 3em 0 1em 0;
+}
+
+#contact article{
+    padding: 0.5em;
+}
+
+a:hover, a:hover div, article:hover .iconHover, article:hover div {
+    color: #505050;
+}
+
+.iconHover {
+    color: #ffffff;
+}
+#underNav {
+    height: 10vh;
+}
+.projetImg{
+    width: 100%;
+    padding: 0 0 1.5em 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projet article img{
+    width: 100%;
+}
+
+.ligne {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px 0 4px;
+    background-color: #B24C59;
+    min-height: 100vh
+}
+
+.colonne {
+    flex: 100%;
+    max-width: 100%
+}
+.colonne {
+    padding: 0 4px;
+    position: relative
+}
+.colonne img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%
+}
+
+.colonne a img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%
+}
+@keyframes slidy {
+    0% {
+        left: 0
+    }
+    15%{
+        left:0;
+    }
+    20%{
+        left:-100%
+    }
+    35%{
+        left:-100%
+    }
+    40%{
+        left:-200%
+    }
+    55%{
+        left:-200%
+    }
+    60%{
+        left:-300%
+    }
+    75%{
+        left:-300%
+    }
+    80%{
+        left:-400%
+    }
+    95%{
+        left: -400%;
+    }
+    100% {
+        left: 0
+    }
+}
+
+@media (min-width: 600px) {
+    .colonne {
+        flex: 50%;
+        max-width: 50%
+    }
+}
+@media (min-width: 1200px) {
+    section article{
+        width: 50%;
+    }
+    .colonne{
+        flex: 25%;
+        max-width: 25%;
+    }
+    #competences {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #competences h2{
+        width: 100%;
+    }
+
+    #competences article {
+        width: 20%;
+
+    }
+
+    .whiteBack div {
+        height: 20px;
+        background: #B24C59;
+        border-radius: 0.3em 0 0 0.3em;
+        width: 0 !important;
+        transition: width 1s ease-in-out;
+    }
+
+    #competences article:hover div {
+        transition: width 1s ease-in-out;
+    }
+
+    #competences article:hover #jaugeInspirations {
+        width: 170px !important;
+    }
+
+    #competences article:hover #jaugeTendances {
+        width: 155px !important;
+    }
+
+    #competences article:hover #jaugeMateriauxTissus {
+        width: 170px !important;
+    }
+
+    #competences article:hover #jaugeManipulations {
+        width: 155px !important;
+    }
+
+    #competences article:hover #jaugeManipulations {
+        width: 155px !important;
+    }
+
+    #competences article:hover #jaugeDetails {
+        width: 155px !important;
+    }
+
+    #competences article:hover #jaugeCouture {
+        width: 180px !important;
+    }
+
+    #competences article:hover #jaugePatronagePlat {
+        width: 155px !important;
+    }
+
+    #competences article:hover #jaugePatronageDigital {
+        width: 105px !important;
+    }
+
+    #competences article:hover #jaugeTricotMain {
+        width: 150px !important;
+    }
+
+    #competences article:hover #jaugeTricotMachine {
+        width: 105px !important;
+    }
+
+    #competences article:hover #jaugeCrochet {
+        width: 120px !important;
+    }
+
+    #competences article:hover #jaugeShibori {
+        width: 180px !important;
+    }
+
+    #competences article:hover #jaugeBatik {
+        width: 110px !important;
+    }
+
+    #competences article:hover #jaugeFlocage {
+        width: 160px !important;
+    }
+
+    #competences article:hover #jaugeSerigraphie {
+        width: 160px !important;
+    }
+
+    #competences article:hover #jaugeDigitalPhotoshop {
+        width: 160px !important;
+    }
+
+    #competences article:hover #jaugeTissageManuel {
+        width: 110px !important;
+    }
+
+    #competences article:hover #jaugeAnglais {
+        width: 200px !important;
+        border-radius: 0.3em;
+    }
+
+    #competences article:hover #jaugeItalien {
+        width: 200px !important;
+        border-radius: 0.3em;
+    }
+
+    #competences article:hover #jaugeAllemand {
+        width: 120px !important;
+    }
+
+    #competences article:hover #jaugeLangueDesSignesLSF {
+        width: 85px !important;
+    }
+}
