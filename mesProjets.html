@@ -7,56 +7,59 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!--    todo title -->
-    <title>Portefolio | Julie Sommaro</title>
-<!--    todo description google -->
-    <meta name="description" content="">
-<!--    todo favicon -->
-    <link rel="icon" type="image/png" href="images/"/>
+    <title>Mes différents projets | Julie Sommaro</title>
+    <meta name="description" content="page de présentation de mes différents projets">
+    <link rel="icon" type="image/png" href="images/favIcon.png"/>
     <link rel="stylesheet" href="stylesheets.css">
-<!--    todo -->
     <link rel="stylesheet" href="https://use.typekit.net/ndc6kov.css">
     <script src="https://kit.fontawesome.com/58f998f035.js" crossorigin="anonymous"></script>
     <!-- Script perso -->
-    <script src="fonction.js"></script>
+    <script src="fonctionProjets.js"></script>
 </head>
 
 <body>
 <!-- todo loader -->
-<!-- todo Nav Bar -->
 <header>
     <nav>
     <ul>
-        <!--        todo logo change + liens accueil-->
-        <li><a href="#"><img src="images/code.png" alt="Logo Julie Sommaro"></a></li>
-        <!--        todo lien vers les projets-->
-        <li><a href="">Accueil</a></li>
-        <!--        todo ancre contact -->
-        <li><a href="">Contact</a></li>
+        <li><a href="index.html"><img src="images/logoJulieSommaro.png" alt="Logo Julie Sommaro"></a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Contact</a></li>
         <!--        todo liens version anglaise-->
-        <li><a href=""><img src="images/EN.png" alt="English WebSite"></a></li>
+        <li><a href="myProjects.html"><img src="images/EN.png" alt="English WebSite"></a></li>
     </ul>
     </nav>
 </header>
-<section id="underNav"></section>
-<!-- Section projet 1 -->
+<section id="loader">
+    <div class="spinner-dual-ring"><div class="loaderCircle">
+        <div></div><div><div></div></div>
+    </div></div>
+</section>
+<section id="underNavProjet"></section>
+<!-- Section Trigon -->
 <section class="projet">
     <h2>
-        Projet 1
+        Projet " Trigon "
     </h2>
-<!--    todo liens vers galerie shooting-->
-    <a href="">
-    <article class="projetImg">
-<!--        todo moodboard projet 1 -->
-        <img src="images/CarteDeVisite_End_Recto.png" alt="">
-    </article>
+    <a href="shootingTrigon.html">
+        <article class="middleProjet">
+            <div id="sliderProjetTrigon">
+                <figure>
+                    <img id="projetTrigonMoodboard" src="images/trigonMoodboardPhone_beige.jpg" alt="Moodboard Trigon">
+                    <img id="projetTrigonCollages" src="images/trigonCollagePhone.jpg" alt="Collages Trigon">
+                    <img id="projetTrigonPalette" src="images/trigonColorPalettePhone.jpg" alt="Color Palette Trigon">
+                    <img id="projetTrigonGarment" src="images/trigonGarmentPhone.jpg" alt="Garment Trigon">
+                    <img id="projetTrigonMaterialManipulation" src="images/trigonMaterialManipulationPhone.jpg" alt="Material Manipulation Trigon">
+                </figure>
+            </div>
+        </article>
     </a>
     <article>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         <br>Aut blanditiis illo molestiae tempora tenetur. Aspernatur at aut corporis eius explicabo in, laboriosam,
         <br>laborum minima necessitatibus nihil odit quis similique, voluptas?
         <br>
-<!--        todo liens vers galerie shooting 1-->
-        <br><a href="">voir le shooting</a>
+        <br><a href="shootingTrigon.html">voir le shooting</a>
     </article>
 </section>
 
@@ -69,7 +72,6 @@
     <a href="">
         <article class="projetImg">
             <!--        todo moodboard projet 2 -->
-            <img src="images/CarteDeVisite_End_Recto.png" alt="">
         </article>
     </a>
     <article>
@@ -91,7 +93,6 @@
     <a href="">
         <article class="projetImg">
             <!--        todo moodboard projet 3 -->
-            <img src="images/CarteDeVisite_End_Recto.png" alt="">
         </article>
     </a>
     <article>
@@ -113,7 +114,6 @@
     <a href="">
         <article class="projetImg">
             <!--        todo moodboard projet 4 -->
-            <img src="images/CarteDeVisite_End_Recto.png" alt="">
         </article>
     </a>
     <article>
@@ -135,7 +135,6 @@
     <a href="">
         <article class="projetImg">
             <!--        todo moodboard projet 5 -->
-            <img src="images/CarteDeVisite_End_Recto.png" alt="">
         </article>
     </a>
     <article>
@@ -160,6 +159,8 @@
     };
     window.onload = function () {
         changementtaillefenetre();
+        setTimeout(function(){document.getElementById("loader").style.opacity = '0%';},10);
+        setTimeout(function(){document.getElementById("loader").style.display = 'none';},310);
     };
 </script>
 </html>

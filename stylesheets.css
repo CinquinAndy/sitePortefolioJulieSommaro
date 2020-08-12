@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
 html {
@@ -42,6 +43,7 @@ section article{
 h1, h2, h3 {
     font-weight: 700;
     padding: 1em;
+    font-size: 1.3em;
 }
 
 footer {
@@ -90,12 +92,13 @@ li img {
 }
 
 ul li:nth-child(1) {
-    padding-left: 1em;
+    padding-left: 5%;
 }
 
 
 section:nth-child(2n+1) {
     background: #B24C59
+
 }
 
 section:nth-child(2n) {
@@ -118,6 +121,7 @@ section:nth-child(2n) h4 {
 #sectionBackground div{
     height: 100%;
     width: 100%;
+    display: flex;
 }
 #sectionBackground div img{
     width: 100%;
@@ -256,6 +260,12 @@ section:nth-child(2n) h4 {
     }
 }
 
+#slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
 #slider figure {
     position: relative;
     width: 500%;
@@ -272,18 +282,48 @@ section:nth-child(2n) h4 {
     float: left
 }
 
-#slider {
-    width: 80%;
+#sliderProjetTrigon {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+#sliderProjetTrigon figure {
+     position: relative;
+     width: 500%;
+     margin: 0;
+     padding: 0;
+     font-size: 0;
+     text-align: left;
+     animation: 17.5s slidy infinite
+ }
+
+#sliderProjetTrigon figure img {
+    width: 20%;
+    height: auto;
+    float: left
+}
+
+#sliderProjetTrigon {
+    width: 100%;
     text-align: center;
     overflow: hidden;
 }
 
-#middle {
+.middle {
     display: flex;
     justify-content: center;
-    width: 100%
+    align-items: center;
+    width: 100%;
 }
-#projets > a{
+.middleProjet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 2em 0;
+}
+
+#voirProjets {
     padding: 3em 0 1em 0;
 }
 
@@ -297,6 +337,9 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
 
 .iconHover {
     color: #ffffff;
+}
+#underNavProjet {
+    height: 10vh;
 }
 #underNav {
     height: 10vh;
@@ -317,7 +360,6 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px 0 4px;
-    background-color: #B24C59;
     min-height: 100vh
 }
 
@@ -339,6 +381,88 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%
+}
+@keyframes loaderCircle {
+    0% { transform: rotate(0) }
+    100% { transform: rotate(360deg) }
+}
+.loaderCircle div { box-sizing: border-box!important }
+.loaderCircle > div {
+    position: absolute;
+    width: 96.47999999999999px;
+    height: 96.47999999999999px;
+    top: 52.25999999999999px;
+    left: 52.25999999999999px;
+    border-radius: 50%;
+    border: 16.08px solid;
+    border-color: #ffffff transparent #ffffff transparent;
+    animation: loaderCircle 0.9615384615384615s linear infinite;
+}
+.loaderCircle > div:nth-child(2) { border-color: transparent }
+.loaderCircle > div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+.loaderCircle > div:nth-child(2) div:before, .loaderCircle > div:nth-child(2) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16.08px;
+    height: 16.08px;
+    top: -16.08px;
+    left: 24.119999999999997px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 80.39999999999999px 0 0 #ffffff;
+}
+.loaderCircle > div:nth-child(2) div:after {
+    left: -16.08px;
+    top: 24.119999999999997px;
+    box-shadow: 80.39999999999999px 0 0 0 #ffffff;
+}
+.spinner-dual-ring {
+    width: 201px;
+    height: 201px;
+    display: inline-block;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+}
+.loaderCircle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+.loaderCircle div { box-sizing: content-box; }
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B24C59;
+    opacity: 1;
+    transition: opacity .3s ease-out
+}
+#displayNone{
+    display: none;
+}
+.mentionLegale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 @keyframes slidy {
     0% {
@@ -381,8 +505,28 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         flex: 50%;
         max-width: 50%
     }
+    #slider,#sliderProjetTrigon  {
+        width: 60%;
+        text-align: center;
+        overflow: hidden;
+    }
+}
+@media (min-width: 680px) {
+    #underNav {
+        height: 0;
+    }
+}
+@media (min-width: 1024px) {
+    #slider,#sliderProjetTrigon {
+        width: 30%;
+        text-align: center;
+        overflow: hidden;
+    }
 }
 @media (min-width: 1200px) {
+    *{
+        font-size: 1.05em;
+    }
     section article{
         width: 50%;
     }
@@ -415,97 +559,97 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         transition: width 1s ease-in-out;
     }
 
-    #competences article:hover div {
+    #competences:hover article div {
         transition: width 1s ease-in-out;
     }
 
-    #competences article:hover #jaugeInspirations {
+    #competences:hover article #jaugeInspirations {
         width: 170px !important;
     }
 
-    #competences article:hover #jaugeTendances {
+    #competences:hover article #jaugeTendances {
         width: 155px !important;
     }
 
-    #competences article:hover #jaugeMateriauxTissus {
+    #competences:hover article #jaugeMateriauxTissus {
         width: 170px !important;
     }
 
-    #competences article:hover #jaugeManipulations {
+    #competences:hover article #jaugeManipulations {
         width: 155px !important;
     }
 
-    #competences article:hover #jaugeManipulations {
+    #competences:hover article #jaugeManipulations {
         width: 155px !important;
     }
 
-    #competences article:hover #jaugeDetails {
+    #competences:hover article #jaugeDetails {
         width: 155px !important;
     }
 
-    #competences article:hover #jaugeCouture {
+    #competences:hover article #jaugeCouture {
         width: 180px !important;
     }
 
-    #competences article:hover #jaugePatronagePlat {
+    #competences:hover article #jaugePatronagePlat {
         width: 155px !important;
     }
 
-    #competences article:hover #jaugePatronageDigital {
+    #competences:hover article #jaugePatronageDigital {
         width: 105px !important;
     }
 
-    #competences article:hover #jaugeTricotMain {
+    #competences:hover article #jaugeTricotMain {
         width: 150px !important;
     }
 
-    #competences article:hover #jaugeTricotMachine {
+    #competences:hover article #jaugeTricotMachine {
         width: 105px !important;
     }
 
-    #competences article:hover #jaugeCrochet {
+    #competences:hover article #jaugeCrochet {
         width: 120px !important;
     }
 
-    #competences article:hover #jaugeShibori {
+    #competences:hover article #jaugeShibori {
         width: 180px !important;
     }
 
-    #competences article:hover #jaugeBatik {
+    #competences:hover article #jaugeBatik {
         width: 110px !important;
     }
 
-    #competences article:hover #jaugeFlocage {
+    #competences:hover article #jaugeFlocage {
         width: 160px !important;
     }
 
-    #competences article:hover #jaugeSerigraphie {
+    #competences:hover article #jaugeSerigraphie {
         width: 160px !important;
     }
 
-    #competences article:hover #jaugeDigitalPhotoshop {
+    #competences:hover article #jaugeDigitalPhotoshop {
         width: 160px !important;
     }
 
-    #competences article:hover #jaugeTissageManuel {
+    #competences:hover article #jaugeTissageManuel {
         width: 110px !important;
     }
 
-    #competences article:hover #jaugeAnglais {
+    #competences:hover article #jaugeAnglais {
         width: 200px !important;
         border-radius: 0.3em;
     }
 
-    #competences article:hover #jaugeItalien {
+    #competences:hover article #jaugeItalien {
         width: 200px !important;
         border-radius: 0.3em;
     }
 
-    #competences article:hover #jaugeAllemand {
+    #competences:hover article #jaugeAllemand {
         width: 120px !important;
     }
 
-    #competences article:hover #jaugeLangueDesSignesLSF {
+    #competences:hover article #jaugeLangueDesSignesLSF {
         width: 85px !important;
     }
 }

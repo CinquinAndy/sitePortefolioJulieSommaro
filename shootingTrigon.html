@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!--    todo google analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    todo title -->
+    <title>Trigon | Julie Sommaro</title>
+    <meta name="description" content="galerie shooting projet 'trigon'">
+    <link rel="icon" type="image/png" href="images/favIcon.png"/>
+    <link rel="stylesheet" href="stylesheets.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ndc6kov.css">
+    <script src="https://kit.fontawesome.com/58f998f035.js" crossorigin="anonymous"></script>
+    <!-- Script perso -->
+    <script src="fonction.js"></script>
+</head>
+
+<body>
+<header>
+    <nav>
+    <ul>
+        <li><a href="index.html"><img src="images/logoJulieSommaro.png" alt="Logo Julie Sommaro"></a></li>
+        <li><a href="mesProjets.html">Mes projets</a></li>
+        <li><a href="index.html">Contact</a></li>
+<!--        todo en version -->
+        <li><a href="shootingTrigonEn.html"><img src="images/EN.png" alt="English WebSite"></a></li>
+    </ul>
+    </nav>
+</header>
+<section id="displayNone"></section>
+<section id="loader">
+    <div class="spinner-dual-ring"><div class="loaderCircle">
+        <div></div><div><div></div></div>
+    </div></div>
+</section>
+<section id="underNavProjet"></section>
+<!-- Section projet 1 -->
+<section>
+    <h2>
+        Shooting Projet Trigon
+    </h2>
+    <div class="ligne">
+        <div class="colonne">
+            <img src="images/photos/trigon/1.jpg" alt="Photos shooting Trigon 1">
+            <img src="images/photos/trigon/5.jpg" alt="Photos shooting Trigon 5">
+            <img src="images/photos/trigon/9.jpg" alt="Photos shooting Trigon 9">
+            <img src="images/photos/trigon/13.jpg" alt="Photos shooting Trigon 13">
+        </div>
+        <div class="colonne">
+            <img src="images/photos/trigon/2.jpg" alt="Photos shooting Trigon 2">
+            <img src="images/photos/trigon/6.jpg" alt="Photos shooting Trigon 6">
+            <img src="images/photos/trigon/10.jpg" alt="Photos shooting Trigon 10">
+            <img src="images/photos/trigon/14.jpg" alt="Photos shooting Trigon 14">
+            <img src="images/photos/trigon/18.jpg" alt="Photos shooting Trigon 18">
+        </div>
+        <div class="colonne">
+            <img src="images/photos/trigon/3.jpg" alt="Photos shooting Trigon 3">
+            <img src="images/photos/trigon/7.jpg" alt="Photos shooting Trigon 7">
+            <img src="images/photos/trigon/11.jpg" alt="Photos shooting Trigon 11">
+            <img src="images/photos/trigon/15.jpg" alt="Photos shooting Trigon 15">
+        </div>
+
+        <div class="colonne">
+            <img src="images/photos/trigon/4.jpg" alt="Photos shooting Trigon 4">
+            <img src="images/photos/trigon/8.jpg" alt="Photos shooting Trigon 8">
+            <img src="images/photos/trigon/12.jpg" alt="Photos shooting Trigon 12">
+            <img src="images/photos/trigon/16.jpg" alt="Photos shooting Trigon 16">
+            <img src="images/photos/trigon/17.jpg" alt="Photos shooting Trigon 17">
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div id="copyright">Website developed & designed by Cinquin Andy - <a href="mentionsLegales.html">Mentions légales</a></div>
+</footer>
+</body>
+<!-- Script Perso -->
+<script>
+    window.onresize = function () {
+    };
+    window.onload = function () {
+        setTimeout(function(){document.getElementById("loader").style.opacity = '0%';},10);
+        setTimeout(function(){document.getElementById("loader").style.display = 'none';},310);
+    };
+</script>
+</html>

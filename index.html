@@ -9,9 +9,9 @@
 <!--    todo title -->
     <title>Portefolio | Julie Sommaro</title>
 <!--    todo description google -->
-    <meta name="description" content="">
+    <meta name="description" content="Portfolio de Julie Sommaro, présentation, projets et contact">
 <!--    todo favicon -->
-    <link rel="icon" type="image/png" href="images/"/>
+    <link rel="icon" type="image/png" href="images/favIcon.png"/>
     <link rel="stylesheet" href="stylesheets.css">
 <!--    todo -->
     <link rel="stylesheet" href="https://use.typekit.net/ndc6kov.css">
@@ -21,28 +21,27 @@
 </head>
 
 <body>
-<!-- todo loader -->
-<!-- todo Nav Bar -->
 <header>
     <nav>
     <ul>
-        <!--        todo logo change + liens accueil-->
-        <li><a href="#"><img src="images/code.png" alt="Logo Julie Sommaro"></a></li>
-        <!--        todo lien vers les projets-->
-        <li><a href="">Mes projets</a></li>
-        <!--        todo ancre contact -->
-        <li><a href="">Contact</a></li>
+        <li><a href="#sectionBackground"><img src="images/logoJulieSommaro.png" alt="Logo Julie Sommaro"></a></li>
+        <li><a href="mesProjets.html">Mes projets</a></li>
+        <li><a href="#contact">Contact</a></li>
         <!--        todo liens version anglaise-->
-        <li><a href=""><img src="images/EN.png" alt="English WebSite"></a></li>
+        <li><a href="indexEN.html"><img src="images/EN.png" alt="English WebSite"></a></li>
     </ul>
     </nav>
 </header>
+<section id="loader">
+    <div class="spinner-dual-ring"><div class="loaderCircle">
+        <div></div><div><div></div></div>
+    </div></div>
+</section>
+<section id="underNav"></section>
 <!-- Background Accueil -->
 <section id="sectionBackground">
-<!--    todo background-->
     <div>
-<!--        todo change desktop / phone-->
-        <img id="backgroundAccueil" src="images/backgroundPhone.jpg" alt="">
+        <img id="backgroundAccueil" src="images/backgroundPhone.jpg" alt="background Julie">
     </div>
 </section>
 <!-- Section presentation -->
@@ -177,21 +176,18 @@
         Mes projets
     </h2>
 <!--        todo carroussel des différents images -> tous les moodboard qui passe -->
-<!--        todo liens vers les projets -->
-    <a href="">
-    <article id="middle">
+    <article class="middle">
         <div id="slider">
             <figure>
-                <a href="" target="_blank"><img id="premierProjetCarroussel" src="images/cinquinMaevaPhone.png" alt="."></a>
-                <a href="" target="_blank"><img id="deuxiemeProjetCarroussel" src="images/ConseilsPhone.png" alt=""></a>
-                <a href="" target="_blank"><img id="troisiemeProjetCarroussel" src="images/IfroceanPhone.png" alt=""></a>
-                <a href="" target="_blank"><img id="quatriemeProjetCarroussel" src="images/CinquinAndyPhone.png" alt=""></a>
-                <a href="" target="_blank"><img id="cinquiemeProjetCarroussel" src="images/BewSitePhone.png" alt=""></a>
+                <a href="mesProjets.html"><img id="premierProjetCarroussel" src="images/trigonPresentationPhone_Red.jpg" alt="presentationProjetTrigon"></a>
+                <a href="mesProjets.html"><img id="deuxiemeProjetCarroussel" src="images/trigonPresentationPhone_Red.jpg" alt="presentationProjetTrigon"></a>
+                <a href="mesProjets.html"><img id="troisiemeProjetCarroussel" src="images/trigonPresentationPhone_Red.jpg" alt="presentationProjetTrigon"></a>
+                <a href="mesProjets.html"><img id="quatriemeProjetCarroussel" src="images/trigonPresentationPhone_Red.jpg" alt="presentationProjetTrigon"></a>
+                <a href="mesProjets.html"><img id="cinquiemeProjetCarroussel" src="images/trigonPresentationPhone_Red.jpg" alt="presentationProjetTrigon"></a>
             </figure>
         </div>
     </article>
-    </a>
-    <a href="">voir mes projets plus en détail</a>
+    <a href="" id="voirProjets">voir mes projets plus en détail</a>
 </section>
 <!-- Section formation -->
 <section id="formation">
@@ -243,6 +239,8 @@
     };
     window.onload = function () {
         changementtaillefenetre();
+        setTimeout(function(){document.getElementById("loader").style.opacity = '0%';},10);
+        setTimeout(function(){document.getElementById("loader").style.display = 'none';},310);
     };
 </script>
 </html>
