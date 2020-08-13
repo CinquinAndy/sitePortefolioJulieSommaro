@@ -9,17 +9,17 @@ function changementtaillefenetre() {
 
     if (document.body.clientWidth >= 680) {
         imageBackground.src = 'images/backgroundDesktop.jpg';
-        //todo projets liens vers moodboard Desktop version
+
         premiereImage.src = 'images/trigonPresentation_Red.jpg';
-        deuxiemeImage.src = 'images/trigonPresentation_Red.jpg';
+        deuxiemeImage.src = 'images/unitePresentation.jpg';
         troisiemeImage.src = 'images/trigonPresentation_Red.jpg';
         quatriemeImage.src = 'images/trigonPresentation_Red.jpg';
         cinquiemeImage.src = 'images/trigonPresentation_Red.jpg';
     } else if (document.body.clientWidth < 680) {
         imageBackground.src = 'images/backgroundPhone.jpg';
-        //todo projets liens vers moodboard Phone version
+
         premiereImage.src = 'images/trigonPresentationPhone_Red.jpg';
-        deuxiemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
+        deuxiemeImage.src = 'images/unitePresentationPhone.jpg';
         troisiemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
         quatriemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
         cinquiemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
