@@ -12,6 +12,12 @@ function changementtaillefenetre() {
     let projetUniteOutfit3= document.getElementById("projetUniteOutfit3");
     let projetUniteOutfit4= document.getElementById("projetUniteOutfit4");
 
+    let projetStarRunnerMoodboard = document.getElementById("projetStarRunnerMoodboard");
+    let projetStarRunnerColorPalette = document.getElementById("projetStarRunnerColorPalette");
+    let projetStarRunnerOutfit1 = document.getElementById("projetStarRunnerOutfit1");
+    let projetStarRunnerCollectionLineup = document.getElementById("projetStarRunnerCollectionLineup");
+    let projetStarRunnerCollectionLineup2 = document.getElementById("projetStarRunnerCollectionLineup2");
+
     if (document.body.clientWidth >= 680) {
         //Trigon desktop
         projetTrigonMoodboard.src = 'images/trigonMoodboard_beige.jpg';
@@ -27,6 +33,14 @@ function changementtaillefenetre() {
         projetUniteOutfit2.src = 'images/uniteOutfit2.jpg';
         projetUniteOutfit3.src = 'images/uniteOutfit3.jpg';
         projetUniteOutfit4.src = 'images/uniteOutfit4.jpg';
+
+        //StarRunner desktop
+        projetStarRunnerMoodboard.src = 'images/starRunnerMoodboard.jpg';
+        projetStarRunnerColorPalette.src = 'images/starRunnerColorPalette.jpg';
+        projetStarRunnerOutfit1.src = 'images/starRunnerOutfit1.jpg';
+        projetStarRunnerCollectionLineup.src = 'images/starRunnerCollectionLineup.jpg';
+        projetStarRunnerCollectionLineup2.src = 'images/starRunnerCollectionLineup2.jpg';
+
     } else if (document.body.clientWidth < 680) {
         //Trigon Phone
         projetTrigonMoodboard.src = 'images/trigonMoodboardPhone_beige.jpg';
@@ -42,6 +56,13 @@ function changementtaillefenetre() {
         projetUniteOutfit2.src = 'images/uniteOutfit2Phone.jpg';
         projetUniteOutfit3.src = 'images/uniteOutfit3Phone.jpg';
         projetUniteOutfit4.src = 'images/uniteOutfit4Phone.jpg';
+
+        //StarRunner desktop
+        projetStarRunnerMoodboard.src = 'images/starRunnerMoodboardPhone.jpg';
+        projetStarRunnerColorPalette.src = 'images/starRunnerColorPalettePhone.jpg';
+        projetStarRunnerOutfit1.src = 'images/starRunnerOutfit1Phone.jpg';
+        projetStarRunnerCollectionLineup.src = 'images/starRunnerCollectionLineupPhone.jpg';
+        projetStarRunnerCollectionLineup2.src = 'images/starRunnerCollectionLineup2Phone.jpg';
     }
 }
 

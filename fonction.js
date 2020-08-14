@@ -12,7 +12,7 @@ function changementtaillefenetre() {
 
         premiereImage.src = 'images/trigonPresentation_Red.jpg';
         deuxiemeImage.src = 'images/unitePresentation.jpg';
-        troisiemeImage.src = 'images/trigonPresentation_Red.jpg';
+        troisiemeImage.src = 'images/starRunnerPresentation.jpg';
         quatriemeImage.src = 'images/trigonPresentation_Red.jpg';
         cinquiemeImage.src = 'images/trigonPresentation_Red.jpg';
     } else if (document.body.clientWidth < 680) {
@@ -20,7 +20,7 @@ function changementtaillefenetre() {
 
         premiereImage.src = 'images/trigonPresentationPhone_Red.jpg';
         deuxiemeImage.src = 'images/unitePresentationPhone.jpg';
-        troisiemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
+        troisiemeImage.src = 'images/starRunnerPresentationPhone.jpg';
         quatriemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
         cinquiemeImage.src = 'images/trigonPresentationPhone_Red.jpg';
     }
