@@ -1,2 +1,2 @@
 # sitePortefolioJulieSommaro
- - web site Julie Sommaro - Designed & Developped by Cinquin Andy
+ - website Julie Sommaro - Designed & Developed by Cinquin Andy
