@@ -14,7 +14,6 @@ function changementtaillefenetre() {
 
     let projetStarRunnerMoodboard = document.getElementById("projetStarRunnerMoodboard");
     let projetStarRunnerColorPalette = document.getElementById("projetStarRunnerColorPalette");
-    let projetStarRunnerOutfit1 = document.getElementById("projetStarRunnerOutfit1");
     let projetStarRunnerCollectionLineup = document.getElementById("projetStarRunnerCollectionLineup");
     let projetStarRunnerCollectionLineup2 = document.getElementById("projetStarRunnerCollectionLineup2");
 
@@ -37,7 +36,6 @@ function changementtaillefenetre() {
         //StarRunner desktop
         projetStarRunnerMoodboard.src = 'images/starRunnerMoodboard.jpg';
         projetStarRunnerColorPalette.src = 'images/starRunnerColorPalette.jpg';
-        projetStarRunnerOutfit1.src = 'images/starRunnerOutfit1.jpg';
         projetStarRunnerCollectionLineup.src = 'images/starRunnerCollectionLineup.jpg';
         projetStarRunnerCollectionLineup2.src = 'images/starRunnerCollectionLineup2.jpg';
 
@@ -60,7 +58,6 @@ function changementtaillefenetre() {
         //StarRunner desktop
         projetStarRunnerMoodboard.src = 'images/starRunnerMoodboardPhone.jpg';
         projetStarRunnerColorPalette.src = 'images/starRunnerColorPalettePhone.jpg';
-        projetStarRunnerOutfit1.src = 'images/starRunnerOutfit1Phone.jpg';
         projetStarRunnerCollectionLineup.src = 'images/starRunnerCollectionLineupPhone.jpg';
         projetStarRunnerCollectionLineup2.src = 'images/starRunnerCollectionLineup2Phone.jpg';
     }
