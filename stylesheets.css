@@ -328,12 +328,12 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
 .loaderCircle div { box-sizing: border-box!important }
 .loaderCircle > div {
     position: absolute;
-    width: 97px;
-    height: 97px;
-    top: 52px;
-    left: 52px;
+    width: 96.47999999999999px;
+    height: 96.47999999999999px;
+    top: 52.25999999999999px;
+    left: 52.25999999999999px;
     border-radius: 50%;
-    border: 16px solid;
+    border: 16.08px solid;
     border-color: #ffffff transparent #ffffff transparent;
     animation: loaderCircle 1s linear infinite;
 }
@@ -348,13 +348,13 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     content: "";
     display: block;
     position: absolute;
-    width: 16px;
-    height: 16px;
-    top: -16px;
-    left: 4px;
+    width: 16.08px;
+    height: 16.08px;
+    top: -16.08px;
+    left: 24.119999999999997px;
     background: #ffffff;
     border-radius: 50%;
-    box-shadow: 0 80px 0 0 #ffffff;
+    box-shadow: 0 80.39999999999999px 0 0 #ffffff;
 }
 .loaderCircle > div:nth-child(2) div:after {
     left: -16.08px;
