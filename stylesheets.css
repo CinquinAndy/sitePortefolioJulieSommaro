@@ -435,25 +435,25 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         left: 0;
     }
     20%{
-        left: -100%;
+        left: 0;
     }
     25%{
         left: -100%;
     }
     45%{
-        left: -200%;
+        left: -100%;
     }
     50%{
         left: -200%;
     }
     70%{
-        left: -300%;
+        left: -200%;
     }
     75%{
-        left: -400%;
+        left: -300%;
     }
     95%{
-        left: -400%;
+        left: -300%;
     }
     100% {
         left: 0;
@@ -462,7 +462,7 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
 /*Calculé pour 5 Images*/
 @keyframes slidy5 {
     0% {
-        left: 0
+        left:0;
     }
     15%{
         left:0;
