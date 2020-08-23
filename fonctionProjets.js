@@ -7,10 +7,8 @@ function changementtaillefenetre() {
 
     let projetUniteMoodboard = document.getElementById("projetUniteMoodboard");
     let projetUniteColorPalette= document.getElementById("projetUniteColorPalette");
-    let projetUniteOutfit1= document.getElementById("projetUniteOutfit1");
-    let projetUniteOutfit2= document.getElementById("projetUniteOutfit2");
-    let projetUniteOutfit3= document.getElementById("projetUniteOutfit3");
-    let projetUniteOutfit4= document.getElementById("projetUniteOutfit4");
+    let projetUniteCollectionLineup = document.getElementById("projetUniteCollectionLineup");
+    let projetUniteCollectionLineup2 = document.getElementById("projetUniteCollectionLineup2");
 
     let projetStarRunnerMoodboard = document.getElementById("projetStarRunnerMoodboard");
     let projetStarRunnerColorPalette = document.getElementById("projetStarRunnerColorPalette");
@@ -28,10 +26,8 @@ function changementtaillefenetre() {
         //Unite desktop
         projetUniteMoodboard.src = 'images/uniteMoodboard.jpg';
         projetUniteColorPalette.src = 'images/uniteColorPalette.jpg';
-        projetUniteOutfit1.src = 'images/uniteOutfit1.jpg';
-        projetUniteOutfit2.src = 'images/uniteOutfit2.jpg';
-        projetUniteOutfit3.src = 'images/uniteOutfit3.jpg';
-        projetUniteOutfit4.src = 'images/uniteOutfit4.jpg';
+        projetUniteCollectionLineup.src = 'images/uniteCollectionLineup.jpg';
+        projetUniteCollectionLineup2.src = 'images/uniteCollectionLineup2.jpg';
 
         //StarRunner desktop
         projetStarRunnerMoodboard.src = 'images/starRunnerMoodboard.jpg';
@@ -50,10 +46,8 @@ function changementtaillefenetre() {
         //Unite Phone
         projetUniteMoodboard.src = 'images/uniteMoodboardPhone.jpg';
         projetUniteColorPalette.src = 'images/uniteColorPalettePhone.jpg';
-        projetUniteOutfit1.src = 'images/uniteOutfit1Phone.jpg';
-        projetUniteOutfit2.src = 'images/uniteOutfit2Phone.jpg';
-        projetUniteOutfit3.src = 'images/uniteOutfit3Phone.jpg';
-        projetUniteOutfit4.src = 'images/uniteOutfit4Phone.jpg';
+        projetUniteCollectionLineup.src = 'images/uniteCollectionLineupPhone.jpg';
+        projetUniteCollectionLineup2.src = 'images/uniteCollectionLineup2Phone.jpg';
 
         //StarRunner desktop
         projetStarRunnerMoodboard.src = 'images/starRunnerMoodboardPhone.jpg';
