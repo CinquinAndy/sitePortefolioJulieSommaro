@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://julie-sommaro.com/sitemap.xml
+Disallow: /dessinsTechniquesOutfitUnite.html
