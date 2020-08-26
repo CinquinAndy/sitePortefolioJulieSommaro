@@ -20,6 +20,11 @@ function changementtaillefenetre() {
     let projetStarRunnerPrintsCollectionLineup = document.getElementById("projetStarRunnerPrintsLineup");
     let projetStarRunnerPrintsCollectionLineup2 = document.getElementById("projetStarRunnerPrintsLineup2");
 
+    let projetStarRunnerTheseMoodboard = document.getElementById("projetStarRunnerTheseMoodboard");
+    let projetStarRunnerTheseColorPalette = document.getElementById("projetStarRunnerTheseColorPalette");
+    let projetStarRunnerTheseCollectionLineup = document.getElementById("projetStarRunnerTheseLineup");
+    let projetStarRunnerTheseCollectionLineup2 = document.getElementById("projetStarRunnerTheseLineup2");
+
     if (document.body.clientWidth >= 680) {
         //Trigon desktop
         projetTrigonMoodboard.src = 'images/trigonMoodboard_beige.jpg';
@@ -45,6 +50,12 @@ function changementtaillefenetre() {
         projetStarRunnerPrintsColorPalette.src = 'images/starRunnerPrintsColorPalette.jpg';
         projetStarRunnerPrintsCollectionLineup.src = 'images/starRunnerPrintsLineup.jpg';
         projetStarRunnerPrintsCollectionLineup2.src = 'images/starRunnerPrintsLineup2.jpg';
+
+        //StarRunner These desktop
+        projetStarRunnerTheseMoodboard.src = 'images/starRunnerTheseMoodboard.jpg';
+        projetStarRunnerTheseColorPalette.src = 'images/starRunnerColorPaletteThese.jpg';
+        projetStarRunnerTheseCollectionLineup.src = 'images/starRunnerTheseCollectionLineup.jpg';
+        projetStarRunnerTheseCollectionLineup2.src = 'images/starRunnerTheseCollectionLineup2.jpg';
     } else if (document.body.clientWidth < 680) {
         //Trigon Phone
         projetTrigonMoodboard.src = 'images/trigonMoodboardPhone_beige.jpg';
@@ -70,6 +81,12 @@ function changementtaillefenetre() {
         projetStarRunnerPrintsColorPalette.src = 'images/starRunnerPrintsColorPalettePhone.jpg';
         projetStarRunnerPrintsCollectionLineup.src = 'images/starRunnerPrintsLineupPhone.jpg';
         projetStarRunnerPrintsCollectionLineup2.src = 'images/starRunnerPrintsLineup2Phone.jpg';
+
+        //StarRunner These Phone
+        projetStarRunnerTheseMoodboard.src = 'images/starRunnerTheseMoodboardPhone.jpg';
+        projetStarRunnerTheseColorPalette.src = 'images/starRunnerColorPaletteThesePhone.jpg';
+        projetStarRunnerTheseCollectionLineup.src = 'images/starRunnerTheseCollectionLineupPhone.jpg';
+        projetStarRunnerTheseCollectionLineup2.src = 'images/starRunnerTheseCollectionLineup2Phone.jpg';
     }
 }
 
