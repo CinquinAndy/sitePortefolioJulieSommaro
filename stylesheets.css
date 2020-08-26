@@ -49,7 +49,7 @@ footer {
 nav {
     z-index: 3;
     width: 100%;
-    height: 5vh;
+    height: 7.5vh;
     display: flex;
     position: fixed;
     top: 0;
@@ -311,12 +311,12 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     color: #ffffff;
 }
 #underNavProjet {
-    height: 5vh;
+    height: 7.5vh;
     padding: 0;
     margin: 0;
 }
 #underNav {
-    height: 5vh;
+    height: 7.5vh;
     padding: 0;
     margin: 0;
 }
@@ -559,15 +559,15 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
 }
 @media (min-width: 1024px) {
     nav{
-        height: 5vh;
+        height: 7.5vh;
     }
     #underNavProjet {
-        height: 5vh;
+        height: 7.5vh;
         padding: 0;
         margin: 0;
     }
     #underNav {
-        height: 5vh;
+        height: 7.5vh;
         padding: 0;
         margin: 0;
     }
