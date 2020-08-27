@@ -3,3 +3,12 @@ Sitemap: https://julie-sommaro.com/sitemap.xml
 Disallow: /dessinsTechniquesOutfitUnite.html
 Disallow: /dessinsTechniquesOutfitStarRunner.html
 Disallow: /dessinsTechniquesOutfitStarRunnerThese.html
+Disallow: /dessinsTechniquesOutfitUnite
+Disallow: /dessinsTechniquesOutfitStarRunner
+Disallow: /dessinsTechniquesOutfitStarRunnerThese
+Disallow: /EN/technicalDrawingOutfitStarRunnerThesis.html
+Disallow: /EN/technicalDrawingOutfitStarRunner.html
+Disallow: /EN/technicalDrawingOutfitUnite.html
+Disallow: /EN/technicalDrawingOutfitStarRunnerThesis
+Disallow: /EN/technicalDrawingOutfitStarRunner
+Disallow: /EN/technicalDrawingOutfitUnite

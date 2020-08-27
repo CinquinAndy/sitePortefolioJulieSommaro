@@ -1,18 +1,20 @@
 * {
-     font-family: din-condensed, sans-serif;
-     font-weight: 400;
-     font-style: normal;
-     box-sizing: border-box;
-     text-decoration: none;
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     text-align: center;
-     transition: all 0.2s ease-in-out;
- }
+    font-family: din-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     width: 100%;
     margin: 0;
@@ -22,9 +24,11 @@ body {
     justify-content: center;
     background-color: #B24C59
 }
+
 a, article, aside, div, footer, h1, hr, section, svg {
     color: #fff
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -32,20 +36,24 @@ section {
     padding: 1em 1em 2.5em 1em;
     width: 100%
 }
-section article{
+
+section article {
     width: 90%;
 }
+
 h1, h2, h3 {
     font-weight: 700;
     padding: 1em;
     font-size: 1.3em;
 }
+
 footer {
     width: 100%;
     padding: 1em;
     background: rgba(127, 54, 62, 0.95);
     backdrop-filter: blur(10px);
 }
+
 nav {
     z-index: 3;
     width: 100%;
@@ -57,6 +65,7 @@ nav {
     background: rgba(127, 54, 62, 0.95);
     backdrop-filter: blur(10px);
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -68,6 +77,7 @@ ul {
     width: 100%;
     height: 100%;
 }
+
 li {
     margin: 0;
     padding: 0;
@@ -77,46 +87,59 @@ li {
     align-items: center;
     text-align: center;
 }
+
 li img {
     height: 32px;
 }
+
 ul li:nth-child(1) {
     padding-left: 5%;
 }
+
 section:nth-child(2n+1) {
     background: #B24C59
 }
-section:nth-child(2n+1) a:hover{
+
+section:nth-child(2n+1) a:hover {
     color: #505050 !important;
 }
+
 section:nth-child(2n) {
     background: #E0DACE
 }
-section:nth-child(2n) a:hover{
+
+section:nth-child(2n) a:hover {
     color: #B24C59 !important;
 }
+
 section:nth-child(2n) * {
     color: #505050;
 }
+
 section:nth-child(2n) h4 {
     color: #BC6E74;
 }
-#sectionBackground{
+
+#sectionBackground {
     max-height: 100vh;
     padding: 0;
     margin: 0;
 }
-#sectionBackground div{
+
+#sectionBackground div {
     height: 100%;
     width: 100%;
     display: flex;
 }
-#sectionBackground div img{
+
+#sectionBackground div img {
     width: 100%;
 }
+
 #competences h4 {
     color: #505050;
 }
+
 .skillbar {
     padding: 0.5em;
     width: 100%;
@@ -124,85 +147,110 @@ section:nth-child(2n) h4 {
     justify-content: center;
     align-items: center;
 }
+
 .whiteBack {
     width: 200px;
     height: 20px;
     background: white;
     border-radius: 0.3em;
 }
+
 .whiteBack div {
     height: 20px;
     background: #B24C59;
     border-radius: 0.3em 0 0 0.3em;
 }
+
 #jaugeInspirations {
     width: 170px;
 }
+
 #jaugeTendances {
     width: 155px;
 }
+
 #jaugeMateriauxTissus {
     width: 170px;
 }
+
 #jaugeManipulations {
     width: 155px;
 }
+
 #jaugeManipulations {
     width: 155px;
 }
+
 #jaugeDetails {
     width: 155px;
 }
+
 #jaugeCouture {
     width: 180px;
 }
+
 #jaugePatronagePlat {
     width: 155px;
 }
+
 #jaugePatronageDigital {
     width: 105px;
 }
+
 #jaugeTricotMain {
     width: 150px;
 }
+
 #jaugeTricotMachine {
     width: 105px;
 }
+
 #jaugeCrochet {
     width: 120px;
 }
+
 #jaugeShibori {
     width: 180px;
 }
+
 #jaugeBatik {
     width: 110px;
 }
+
 #jaugeFlocage {
     width: 160px;
 }
+
 #jaugeSerigraphie {
     width: 160px;
 }
+
 #jaugeDigitalPhotoshop {
     width: 160px;
 }
+
 #jaugeTissageManuel {
     width: 110px;
 }
+
 #jaugeAnglais {
     width: 200px;
     border-radius: 0.3em;
 }
+
 #jaugeItalien {
     width: 200px;
     border-radius: 0.3em;
 }
+
 #jaugeAllemand {
     width: 120px;
 }
+
 #jaugeLangueDesSignesLSF {
     width: 85px;
 }
+
 @keyframes slidein {
     0% {
         margin-top: 100vh
@@ -211,6 +259,7 @@ section:nth-child(2n) h4 {
         margin-top: 0
     }
 }
+
 @keyframes slideout {
     0% {
         margin-top: 0
@@ -219,6 +268,7 @@ section:nth-child(2n) h4 {
         margin-top: -100vh
     }
 }
+
 .slider4Projet {
     width: 100%;
     text-align: center;
@@ -269,6 +319,7 @@ section:nth-child(2n) h4 {
     align-items: center;
     width: 100%;
 }
+
 .middleProjet {
     display: flex;
     justify-content: center;
@@ -276,57 +327,77 @@ section:nth-child(2n) h4 {
     width: 100%;
     padding: 0 0 2em 0;
 }
+
 #voirProjets {
     padding: 3em 0 1em 0;
 }
-#contact article{
+
+#contact article {
     padding: 0.5em;
 }
+
 a:hover, a:hover div, article:hover .iconHover, article:hover div {
     color: #505050;
 }
+
 .iconHover {
     color: #ffffff;
 }
+
 #underNavProjet {
     height: 7.5vh;
     padding: 0;
     margin: 0;
 }
+
 #underNav {
     height: 7.5vh;
     padding: 0;
     margin: 0;
 }
+
 .ligne {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px 0 4px;
     min-height: 100vh
 }
+
 .colonne {
     flex: 100%;
     max-width: 100%
 }
+
 .colonne {
     padding: 0 4px;
     position: relative
 }
+
 .colonne img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%
 }
+
 .colonne a img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%
 }
+
 @keyframes loaderCircle {
-    0% { transform: rotate(0) }
-    100% { transform: rotate(360deg) }
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
-.loaderCircle div { box-sizing: border-box!important }
+
+.loaderCircle div {
+    box-sizing: border-box !important
+}
+
 .loaderCircle > div {
     position: absolute;
     width: 96.47999999999999px;
@@ -338,13 +409,18 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     border-color: #ffffff transparent #ffffff transparent;
     animation: loaderCircle 1s linear infinite;
 }
-.loaderCircle > div:nth-child(2) { border-color: transparent }
+
+.loaderCircle > div:nth-child(2) {
+    border-color: transparent
+}
+
 .loaderCircle > div:nth-child(2) div {
     position: absolute;
     width: 100%;
     height: 100%;
     transform: rotate(45deg);
 }
+
 .loaderCircle > div:nth-child(2) div:before, .loaderCircle > div:nth-child(2) div:after {
     content: "";
     display: block;
@@ -357,11 +433,13 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     border-radius: 50%;
     box-shadow: 0 80.39999999999999px 0 0 #ffffff;
 }
+
 .loaderCircle > div:nth-child(2) div:after {
     left: -16.08px;
     top: 24px;
     box-shadow: 80px 0 0 0 #ffffff;
 }
+
 .spinner-dual-ring {
     width: 201px;
     height: 201px;
@@ -369,6 +447,7 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     overflow: hidden;
     background: rgba(0, 0, 0, 0);
 }
+
 .loaderCircle {
     width: 100%;
     height: 100%;
@@ -377,8 +456,12 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     backface-visibility: hidden;
     transform-origin: 0 0; /* see note above */
 }
-.loaderCircle div { box-sizing: content-box; }
-#loader{
+
+.loaderCircle div {
+    box-sizing: content-box;
+}
+
+#loader {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -392,10 +475,12 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     opacity: 1;
     transition: opacity .3s ease-out
 }
-#displayNone{
+
+#displayNone {
     display: none;
 }
-.mentionLegale{
+
+.mentionLegale {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,72 +488,75 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     padding: 0;
     margin: 0;
 }
+
 /*Calculé pour 4 Images*/
 @keyframes slidy4 {
     0% {
         left: 0;
     }
-    20%{
+    20% {
         left: 0;
     }
-    25%{
+    25% {
         left: -100%;
     }
-    45%{
+    45% {
         left: -100%;
     }
-    50%{
+    50% {
         left: -200%;
     }
-    70%{
+    70% {
         left: -200%;
     }
-    75%{
+    75% {
         left: -300%;
     }
-    95%{
+    95% {
         left: -300%;
     }
     100% {
         left: 0;
     }
 }
+
 /*Calculé pour 5 Images*/
 @keyframes slidy5 {
     0% {
-        left:0;
+        left: 0;
     }
-    15%{
-        left:0;
+    15% {
+        left: 0;
     }
-    20%{
-        left:-100%
+    20% {
+        left: -100%
     }
-    35%{
-        left:-100%
+    35% {
+        left: -100%
     }
-    40%{
-        left:-200%
+    40% {
+        left: -200%
     }
-    55%{
-        left:-200%
+    55% {
+        left: -200%
     }
-    60%{
-        left:-300%
+    60% {
+        left: -300%
     }
-    75%{
-        left:-300%
+    75% {
+        left: -300%
     }
-    80%{
-        left:-400%
+    80% {
+        left: -400%
     }
-    95%{
+    95% {
         left: -400%;
     }
     100% {
         left: 0
     }
 }
+
 /*Calculé pour 6 Images*/
 @keyframes slidy6 {
     0% {
@@ -511,53 +599,64 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         left: 0;
     }
 }
+
 @media (min-width: 600px) {
     .colonne {
         flex: 50%;
         max-width: 50%
     }
+
     .slider4Projet, .slider5Projet {
         width: 60%;
         text-align: center;
         overflow: hidden;
     }
 }
+
 @media (min-width: 680px) {
     #underNav {
         height: 0;
     }
 }
+
 @media (min-width: 1024px) {
-    nav{
+    nav {
         height: 7.5vh;
     }
+
     #underNavProjet {
         height: 7.5vh;
         padding: 0;
         margin: 0;
     }
+
     #underNav {
         height: 7.5vh;
         padding: 0;
         margin: 0;
     }
+
     .slider4Projet, .slider5Projet {
         width: 30%;
         text-align: center;
         overflow: hidden;
     }
 }
+
 @media (min-width: 1200px) {
-    *{
+    * {
         font-size: 1.05em;
     }
-    section article{
+
+    section article {
         width: 50%;
     }
-    .colonne{
+
+    .colonne {
         flex: 25%;
         max-width: 25%;
     }
+
     #competences {
         display: flex;
         flex-wrap: wrap;
@@ -566,13 +665,16 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         width: 100%;
         justify-content: space-evenly;
     }
-    #competences h2{
+
+    #competences h2 {
         width: 100%;
     }
+
     #competences article {
         width: 20%;
 
     }
+
     .whiteBack div {
         height: 20px;
         background: #B24C59;
@@ -580,74 +682,97 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
         width: 0 !important;
         transition: width 1s ease-in-out;
     }
+
     #competences:hover article div {
         transition: width 1s ease-in-out;
     }
+
     #competences:hover article #jaugeInspirations {
         width: 170px !important;
     }
+
     #competences:hover article #jaugeTendances {
         width: 155px !important;
     }
+
     #competences:hover article #jaugeMateriauxTissus {
         width: 170px !important;
     }
+
     #competences:hover article #jaugeManipulations {
         width: 155px !important;
     }
+
     #competences:hover article #jaugeManipulations {
         width: 155px !important;
     }
+
     #competences:hover article #jaugeDetails {
         width: 155px !important;
     }
+
     #competences:hover article #jaugeCouture {
         width: 180px !important;
     }
+
     #competences:hover article #jaugePatronagePlat {
         width: 155px !important;
     }
+
     #competences:hover article #jaugePatronageDigital {
         width: 105px !important;
     }
+
     #competences:hover article #jaugeTricotMain {
         width: 150px !important;
     }
+
     #competences:hover article #jaugeTricotMachine {
         width: 105px !important;
     }
+
     #competences:hover article #jaugeCrochet {
         width: 120px !important;
     }
+
     #competences:hover article #jaugeShibori {
         width: 180px !important;
     }
+
     #competences:hover article #jaugeBatik {
         width: 110px !important;
     }
+
     #competences:hover article #jaugeFlocage {
         width: 160px !important;
     }
+
     #competences:hover article #jaugeSerigraphie {
         width: 160px !important;
     }
+
     #competences:hover article #jaugeDigitalPhotoshop {
         width: 160px !important;
     }
+
     #competences:hover article #jaugeTissageManuel {
         width: 110px !important;
     }
+
     #competences:hover article #jaugeAnglais {
         width: 200px !important;
         border-radius: 0.3em;
     }
+
     #competences:hover article #jaugeItalien {
         width: 200px !important;
         border-radius: 0.3em;
     }
+
     #competences:hover article #jaugeAllemand {
         width: 120px !important;
     }
+
     #competences:hover article #jaugeLangueDesSignesLSF {
         width: 85px !important;
     }

@@ -5,12 +5,15 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176570409-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-176570409-1');
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
@@ -27,24 +30,32 @@
 <header>
     <nav>
         <ul>
-            <li><a href="https://julie-sommaro.com/EN/indexEn"><img src="../images/logoJulieSommaro.png" alt="Logo Julie Sommaro"></a></li>
+            <li><a href="https://julie-sommaro.com/EN/indexEn"><img src="../images/logoJulieSommaro.png"
+                                                                    alt="Logo Julie Sommaro"></a></li>
             <li><a href="https://julie-sommaro.com/EN/myProjects">My projects</a></li>
             <li><a href="https://julie-sommaro.com/EN/indexEn#contact">Contact</a></li>
-            <li><a href="https://julie-sommaro.com/../shootingUnite"><img src="../images/FR.png" alt="French WebSite"></a></li>
+            <li><a href="https://julie-sommaro.com/../shootingUnite"><img src="../images/FR.png"
+                                                                          alt="French WebSite"></a></li>
         </ul>
     </nav>
 </header>
 <section id="displayNone"></section>
 <section id="loader">
-    <div class="spinner-dual-ring"><div class="loaderCircle">
-        <div></div><div><div></div></div>
-    </div></div>
+    <div class="spinner-dual-ring">
+        <div class="loaderCircle">
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 </section>
 <section id="underNavProjet"></section>
 <!-- Unite -->
 <section>
     <h2>
-        Shooting Unite - <a href="https://julie-sommaro.com/EN/technicalDrawingOutfitStarRunner">(see technical drawings & outfits)</a>
+        Shooting Unite - <a href="https://julie-sommaro.com/EN/technicalDrawingOutfitStarRunner">(see technical drawings
+        & outfits)</a>
     </h2>
     <div class="ligne">
         <div class="colonne">
@@ -87,14 +98,19 @@
 
 <!-- Footer -->
 <footer>
-    <div id="copyright">Website developed & designed by Cinquin Andy - <a href="https://julie-sommaro.com/EN/legalNotice">Legal Notice</a></div>
+    <div id="copyright">Website developed & designed by Cinquin Andy - <a
+            href="https://julie-sommaro.com/EN/legalNotice">Legal Notice</a></div>
 </footer>
 </body>
 <!-- Script Perso -->
 <script>
     window.onload = function () {
-        setTimeout(function(){document.getElementById("loader").style.opacity = '0%';},10);
-        setTimeout(function(){document.getElementById("loader").style.display = 'none';},310);
+        setTimeout(function () {
+            document.getElementById("loader").style.opacity = '0%';
+        }, 10);
+        setTimeout(function () {
+            document.getElementById("loader").style.display = 'none';
+        }, 310);
     };
 </script>
 </html>

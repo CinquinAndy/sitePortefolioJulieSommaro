@@ -5,12 +5,15 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176570409-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-176570409-1');
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
@@ -23,22 +26,28 @@
     <script src="https://kit.fontawesome.com/58f998f035.js" crossorigin="anonymous"></script>
     <!-- Script perso -->
 </head>
-
 <body>
 <header>
     <nav>
         <ul>
-            <li><a href="https://julie-sommaro.com/index"><img src="images/logoJulieSommaro.png" alt="Logo Julie Sommaro"></a></li>
+            <li><a href="https://julie-sommaro.com/index"><img src="images/logoJulieSommaro.png"
+                                                               alt="Logo Julie Sommaro"></a></li>
             <li><a href="https://julie-sommaro.com/mesProjets">Mes projets</a></li>
             <li><a href="https://julie-sommaro.com#contact">Contact</a></li>
-            <li><a href="https://julie-sommaro.com/EN/legalNotice"><img src="images/EN.png" alt="English WebSite"></a></li>
+            <li><a href="https://julie-sommaro.com/EN/legalNotice"><img src="images/EN.png" alt="English WebSite"></a>
+            </li>
         </ul>
     </nav>
 </header>
 <section id="loader">
-    <div class="spinner-dual-ring"><div class="loaderCircle">
-        <div></div><div><div></div></div>
-    </div></div>
+    <div class="spinner-dual-ring">
+        <div class="loaderCircle">
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 </section>
 <section id="displayNone"></section>
 <!-- Section projet 1 -->
@@ -46,9 +55,12 @@
     <h1>DROIT D’AUTEUR</h1>
     <article>
         <p>
-            L’ensemble de ce site est soumis à une protection de droits d’auteur selon les Articles L335-2 et suivants du
-            Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son contenu,
-            images, textes, sons, par quelque procédé utilisé, sans l’autorisation préalable de la société 'Cinquin Andy' ou de Julie Sommaro, est
+            L’ensemble de ce site est soumis à une protection de droits d’auteur selon les Articles L335-2 et suivants
+            du
+            Code de la propriété intellectuelle. Toute reproduction ou représentation totale ou partielle de son
+            contenu,
+            images, textes, sons, par quelque procédé utilisé, sans l’autorisation préalable de la société 'Cinquin
+            Andy' ou de Julie Sommaro, est
             interdite. Toute violation constituera une sanction et fera l’objet de poursuite.
         </p>
         <h2>Propriétaire du site internet</h2>
@@ -79,8 +91,12 @@
 <!-- Script Perso -->
 <script>
     window.onload = function () {
-        setTimeout(function(){document.getElementById("loader").style.opacity = '0%';},10);
-        setTimeout(function(){document.getElementById("loader").style.display = 'none';},310);
+        setTimeout(function () {
+            document.getElementById("loader").style.opacity = '0%';
+        }, 10);
+        setTimeout(function () {
+            document.getElementById("loader").style.display = 'none';
+        }, 310);
     };
 </script>
 </html>

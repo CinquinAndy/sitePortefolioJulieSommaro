@@ -1,12 +1,12 @@
 function changementtaillefenetre() {
-    let projetTrigonMoodboard= document.getElementById("projetTrigonMoodboard");
-    let projetTrigonPalette= document.getElementById("projetTrigonPalette");
-    let projetTrigonCollages= document.getElementById("projetTrigonCollages");
-    let projetTrigonGarment= document.getElementById("projetTrigonGarment");
-    let projetTrigonMaterialManipulation= document.getElementById("projetTrigonMaterialManipulation");
+    let projetTrigonMoodboard = document.getElementById("projetTrigonMoodboard");
+    let projetTrigonPalette = document.getElementById("projetTrigonPalette");
+    let projetTrigonCollages = document.getElementById("projetTrigonCollages");
+    let projetTrigonGarment = document.getElementById("projetTrigonGarment");
+    let projetTrigonMaterialManipulation = document.getElementById("projetTrigonMaterialManipulation");
 
     let projetUniteMoodboard = document.getElementById("projetUniteMoodboard");
-    let projetUniteColorPalette= document.getElementById("projetUniteColorPalette");
+    let projetUniteColorPalette = document.getElementById("projetUniteColorPalette");
     let projetUniteCollectionLineup = document.getElementById("projetUniteCollectionLineup");
     let projetUniteCollectionLineup2 = document.getElementById("projetUniteCollectionLineup2");
 
