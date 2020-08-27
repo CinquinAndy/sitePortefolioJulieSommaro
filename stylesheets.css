@@ -355,7 +355,9 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     padding: 0;
     margin: 0;
 }
-
+#underNavIndex{
+    display: none;
+}
 .ligne {
     display: flex;
     flex-wrap: wrap;
