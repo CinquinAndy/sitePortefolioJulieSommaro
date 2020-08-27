@@ -7,21 +7,21 @@ function changementtaillefenetre() {
     let cinquiemeImage = document.getElementById("cinquiemeProjetCarroussel");
 
     if (document.body.clientWidth >= 680) {
-        imageBackground.src = '../images/backgroundDesktop.jpg';
+        imageBackground.src = 'images/backgroundDesktop.jpg';
 
-        premiereImage.src = '../images/trigonPresentation_Red.jpg';
-        deuxiemeImage.src = '../images/unitePresentation.jpg';
-        troisiemeImage.src = '../images/starRunnerPresentation.jpg';
-        quatriemeImage.src = '../images/starRunnerPrintsPresentation.jpg';
-        cinquiemeImage.src = '../images/starRunnerPresentationThese.jpg';
+        premiereImage.src = 'images/trigonPresentation_Red.jpg';
+        deuxiemeImage.src = 'images/unitePresentation.jpg';
+        troisiemeImage.src = 'images/starRunnerPresentation.jpg';
+        quatriemeImage.src = 'images/starRunnerPrintsPresentation.jpg';
+        cinquiemeImage.src = 'images/starRunnerPresentationThese.jpg';
     } else if (document.body.clientWidth < 680) {
-        imageBackground.src = '../images/backgroundPhone.jpg';
+        imageBackground.src = 'images/backgroundPhone.jpg';
 
-        premiereImage.src = '../images/trigonPresentationPhone_Red.jpg';
-        deuxiemeImage.src = '../images/unitePresentationPhone.jpg';
-        troisiemeImage.src = '../images/starRunnerPresentationPhone.jpg';
-        quatriemeImage.src = '../images/starRunnerPrintsPresentationPhone.jpg';
-        cinquiemeImage.src = '../images/starRunnerPresentationThesePhone.jpg';
+        premiereImage.src = 'images/trigonPresentationPhone_Red.jpg';
+        deuxiemeImage.src = 'images/unitePresentationPhone.jpg';
+        troisiemeImage.src = 'images/starRunnerPresentationPhone.jpg';
+        quatriemeImage.src = 'images/starRunnerPrintsPresentationPhone.jpg';
+        cinquiemeImage.src = 'images/starRunnerPresentationThesePhone.jpg';
     }
 }
 
