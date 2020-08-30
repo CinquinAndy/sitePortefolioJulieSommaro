@@ -242,6 +242,10 @@ section:nth-child(2n) h4 {
     width: 200px;
     border-radius: 0.3em;
 }
+#jaugeFrançais {
+    width: 200px;
+    border-radius: 0.3em;
+}
 
 #jaugeAllemand {
     width: 120px;
@@ -490,6 +494,12 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     padding: 0;
     margin: 0;
 }
+#logoContainer{
+    width: 100%;
+}
+#logoContainer img{
+    width: 29px;
+}
 
 /*Calculé pour 4 Images*/
 @keyframes slidy4 {
@@ -649,6 +659,9 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     * {
         font-size: 1.05em;
     }
+    #logoContainer img{
+        width: 35px;
+    }
 
     section article {
         width: 50%;
@@ -767,6 +780,11 @@ a:hover, a:hover div, article:hover .iconHover, article:hover div {
     }
 
     #competences:hover article #jaugeItalien {
+        width: 200px !important;
+        border-radius: 0.3em;
+    }
+
+    #competences:hover article #jaugeFrançais {
         width: 200px !important;
         border-radius: 0.3em;
     }
