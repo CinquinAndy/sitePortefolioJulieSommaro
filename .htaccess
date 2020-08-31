@@ -5,5 +5,4 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^.]+)$ $1.html [NC,L]
-
-#todo mettre à jours tous les liens, que ça soit smooth
+RedirectMatch 404 /\.git
